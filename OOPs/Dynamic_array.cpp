@@ -76,7 +76,19 @@ void showtReecod(const teacher &t){
 
 int main(){
 
-    student *arr = new student[3];
+    student *arr = new student[6];
+
+    string n;
+    int a;
+    for(int i = 3 ; i < 6 ; i++){
+        cout << "Enter name: ";
+        cin >> n;
+
+        cout << "Enter age: ";
+        cin >> a;
+
+        arr[i] = student(n, a);  // assigning object
+    }
 
     arr[0] = student("shivansh" , 19);
     arr[1] = student("adi" , 20);
